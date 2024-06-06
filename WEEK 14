@@ -38,17 +38,17 @@ visited[nextnode]=1;
  }
  //Printingthedistance
  for(i=0;i<n;i++)
- printf("\nDistancefromsourceto%d:%d",i,distance[i]);
+ printf("\nDistance from source to %d:%d",i,distance[i]);
  }
- intmain(){
- intG[MAX][MAX],i,j,n,u;
- printf("Enternumberofvertices");
+ int main(){
+ int G[MAX][MAX],i,j,n,u;
+ printf("Enter number of vertices");
  scanf("%d",&n);
- printf("EntervaluesforadjacencyMatrixofWeightedGraph");
+ printf("Enter values for adjacency Matrix of WeightedGraph");
  for(i=0;i<n;i++)
  for(j=0;j<n;j++)
  scanf("%d",&G[i][j]);
  u=0;
  Dijkstra(G,n,u);
- return0;
+ return 0;
  }
